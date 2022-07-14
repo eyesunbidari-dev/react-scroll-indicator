@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Content from "./Content";
+import Scrollindicator from "./Scrollindicator";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <div className="container">
+          <ul>
+            <li>خانه</li>
+            <li>درباره ما</li>
+            <li>تماس با ما</li>
+            <li>سوالات رایج</li>
+          </ul>
+        </div>
       </header>
-    </div>
+      <Scrollindicator />
+      <Content />
+    </>
   );
 }
 
